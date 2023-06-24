@@ -1,6 +1,33 @@
+header h1.display-3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color:#3e4457;
+}
+
+header p.lead {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:28px;
+  text-align: center;
+  color:#3e4457;
+}
+#currentDay {
+  font-weight:bold;
+  text-align: center;
+  color:#3e4457;
+}
+#timeNow {
+  font-weight: bold;
+  font-size:26px;
+  text-align: center;
+  color:#3e4457;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-image: url('Assets/8b0fec2102f7d0c6cc3afe07625b1cdb\ \(1\).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 textarea {
@@ -21,27 +48,27 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(250, 245, 245);
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: rgba(172, 15, 15, 0);
   color: #000000;
-  border-top: 1px dashed #000000;
+ 
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #e3e1e1;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ed7771;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #a3f4a3;
   color: white;
 }
 
@@ -49,7 +76,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #5e72b4;
   color: white;
 }
 
