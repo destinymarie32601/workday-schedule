@@ -2,28 +2,28 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function () {
-  const currentDay = dayjs().format('dddd, MMMM D, YYYY');
+  const currentDay = dayjs().format('dddd, MMMM D, YYYY'); //gets the current day / date
 
-  $('#currentDay').text(currentDay);
+  $('#currentDay').text(currentDay); //displays current date
 
-  $(".saveBtn").on("click", function () {
-    var text = $(this).siblings(".description").val();
-    var time = $(this).parent().attr("id");
+  $(".saveBtn").on("click", function () { //click event listener for the save buttons
+    var text = $(this).siblings(".description").val(); //gets the sibling element value for the description class
+    var time = $(this).parent().attr("id"); //gets the parent element id 
 
-    localStorage.setItem(time, text);
+    localStorage.setItem(time, text); //storing in local storage
 
   });
 
-  function timeTracker() {
-    const currentHour = dayjs().hour(); // gets current time
+  function timeTracker() { //time tracker function
+    const currentHour = dayjs().hour(); // gets current time in hours
 
-    $('#timeNow').text(dayjs().format('h:mm A'));
+    $('#timeNow').text(dayjs().format('h:mm A')); //formats and displays the current time
 
-    $(".time-block").each(function () {
+    $(".time-block").each(function () { //
       var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
 
-      if (timeBlock < currentHour) {
-        $(this).removeClass('present future').addClass('past');
+      if (timeBlock < currentHour) { //checking if the timeblock is less than the current hour time
+        $(this).removeClass('present future').addClass('past'); // adds and removes past / present classes to coordinate with the colors
       } else if (timeBlock === currentHour) {
         $(this).removeClass('past future').addClass('present');
       } else {
@@ -32,37 +32,8 @@ $(document).ready(function () {
     });
   }
 
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html
-
-function setSavedDescriptions(){
-  $('.time-block').each(function() {
-    const id = $(this).attr('id');
-    const savedDescription = localStorage.getItem(id);
-    $(this).find('.description').val(savedDescription);
-  });
-}
-setSavedDescriptions();
-
-  $('#hour9 .description').val(localStorage.getItem('hour9'));
-  $('#hour10 .description').val(localStorage.getItem('hour10'));
+  $('#hour9 .description').val(localStorage.getItem('hour9')); //sets the values of the textarea elements based on the data from local storage
+  $('#hour10 .description').val(localStorage.getItem('hour10')); //ensures the data typed in is still there after being refreshed
   $('#hour11 .description').val(localStorage.getItem('hour11'));
   $('#hour12 .description').val(localStorage.getItem('hour12'));
   $('#hour13 .description').val(localStorage.getItem('hour13'));
@@ -70,12 +41,7 @@ setSavedDescriptions();
   $('#hour15 .description').val(localStorage.getItem('hour15'));
   $('#hour16 .description').val(localStorage.getItem('hour16'));
   $('#hour17 .description').val(localStorage.getItem('hour17'));
-  
 
 
-  //
-  // TODO: Add code to display the current date in the header of the page. DONE
- 
-
-  timeTracker();
-});
+  timeTracker(); //calling the time tracker function
+}); 

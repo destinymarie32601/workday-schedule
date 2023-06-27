@@ -2,30 +2,30 @@ header h1.display-3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 60px;
   text-align: center;
-  color:#3e4457;
+  color:#f0f1f7;
 }
 
 header p.lead {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size:28px;
   text-align: center;
-  color:#3e4457;
+  color:#f4f5f8;
 }
 #currentDay {
   font-weight:bold;
   text-align: center;
-  color:#3e4457;
+  color:#fcfcfe;
 }
 #timeNow {
   font-weight: bold;
   font-size:26px;
   text-align: center;
-  color:#3e4457;
+  color:#f1f3f6;
 }
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-image: url('Assets/8b0fec2102f7d0c6cc3afe07625b1cdb\ \(1\).jpg');
+  background-image: url(/Develop/Assets/Images/3b2635e53ead80017f47a1342e31e983.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
