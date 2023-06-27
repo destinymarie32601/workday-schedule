@@ -6,7 +6,8 @@ The motive of this project was to create a work day scheduler application using 
 
 ## Links
 
-Deployed Application Url : 
+Deployed Application Url : https://destinymarie32601.github.io/workday-schedule/
+
 
 GitHub Repo : https://github.com/destinymarie32601/workday-schedule
 
