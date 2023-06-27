@@ -21,3 +21,5 @@ This project contains time blocks from 9am to 5pm. The user can type in text int
 ![Alt text](/Develop/Assets/Images/Screenshot%20(33).png)
 
 ## Credits
+To help me solve this project, I referenced a github project for a work day scheduler : https://github.com/nicnolen/work-scheduler/blob/main/assets/js/script.js
+I referenced the code in this github project in my script.js file.
