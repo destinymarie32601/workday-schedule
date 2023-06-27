@@ -17,9 +17,9 @@ This project contains time blocks from 9am to 5pm. The user can type in text int
 
 ## Website Screenshots
 
-![Alt text](/Assets/Images/Screenshot%20(31).png)
-![Alt text](/Assets/Images/Screenshot%20(32).png)
-![Alt text](/Assets/Images/Screenshot%20(33).png)
+![Alt text](/assets/images/Screenshot%20(31).png);
+![Alt text](/assets/images/Screenshot%20(32).png);
+![Alt text](/assets/images/Screenshot%20(33).png);
 
 ## Credits
 To help me solve this project, I referenced a github project for a work day scheduler : https://github.com/nicnolen/work-scheduler/blob/main/assets/js/script.js
